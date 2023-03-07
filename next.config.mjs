@@ -9,7 +9,22 @@
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'jackfperryjr.github.io',
+        port: '',
+        pathname: '/moogleapi-images/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'mooglestorage.blob.core.windows.net',
+        port: '',
+        pathname: '/images/**',
+      },
+    ],
+  },
   /**
    * If you have the "experimental: { appDir: true }" setting enabled, then you
    * must comment the below `i18n` config out.
