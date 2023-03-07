@@ -1,28 +1,30 @@
-# Create T3 App
+# Final Fantasy Fan Vote
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## The Goal
+I wanted to build something that included something I am passionate about. The Final Fantasy series holds a special place in my heart and when I found
+an api that had a lot of data on the series, I had to build something with it. Final Fantasy Fan Vote lets users vote for their favorite characters and games as well as
+track current rankings via the results pages. Special thanks to the [MoogleApi](https://www.moogleapi.com/) and [Jack Perry Jr](https://github.com/jackfperryjr?tab=overview&from=2023-03-01&to=2023-03-06) for creating the moogleApi for the rest of us Final Fantasy Fans!
 
-## What's next? How do I make an app with this?
+## Tech Used
+When I heard about the [T3 stack](https://create.t3.gg/), I was instantly excited to start learning more about it. It offers
+typesafety on both the front and backend and seemed easier to setup full stack projects then some of the other ways I had done before.
+The stack includes some of the following:
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+**Frontend**
+- Nextjs
+- TailwindCss
+- Typescript
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+**Backend**
+- Postgresql
+- Prisma
+- TRPC
+- Typescript
+## ScreenShots
+![Final Fantasy Fan Vote home page](public/screenshots/home.png)
+![Final Fantasy Fan Vote characters page](public/screenshots/characters.png)
+![Final Fantasy Fan Vote games page](public/screenshots/games.png)
+![Final Fantasy Fan Vote characters results page](public/screenshots/charactersResults.png)
+![Final Fantasy Fan Vote games results page](public/screenshots/gameResults.png)
+![Final Fantasy Fan Vote responsiveness demonstrated](public/screenshots/mobile.png)
+![Final Fantasy Fan Vote hamburger menu demonstrated](public/screenshots/hamburger.png)
