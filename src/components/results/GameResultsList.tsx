@@ -31,7 +31,7 @@ const GameResultsList = ({ results }: Results) => {
                 rounded-full w-14 h-14 flex justify-center items-center self-start`}>
                 <h3 className='text-slate-900 text-3xl'>{index + 1}</h3>
               </div>
-              <div className="flex justify-center gap-10">
+              <div className="flex justify-center gap-10 md:justify-evenly md:min-w-full">
                 <h3 className='font-medium text-lg md:text-2xl'>{result.title}</h3>
                 <h1 className='font-medium text-lg md:text-2xl'>Votes: {result.votes}</h1>
               </div>

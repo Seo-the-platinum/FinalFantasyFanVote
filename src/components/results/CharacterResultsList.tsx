@@ -22,8 +22,9 @@ const CharacterResultsList = ({ results }: Results) => {
           return (
             <div className="
               bg-gradient-to-tr from-indigo-900 via-blue-800 to-indigo-900
-              border-2 gap-y-4 gap-x-2 p-2 rounded-lg items-center border-slate-200 
-              flex flex-col text-slate-200 md:items-end md:self-center md:min-w-full"
+              border-2 gap-y-4 gap-x-2 p-2 rounded-lg items-center border-slate-200
+              flex flex-col text-slate-200 
+              md:items-end md:self-center min-w-full"
               key={result.id} id={result.id}>
               <div className="flex flex-col items-center w-full">
                 <div className={`
@@ -37,7 +38,9 @@ const CharacterResultsList = ({ results }: Results) => {
                   <h3 className='font-medium text-lg md:text-2xl'>{result.name}</h3>
                   <h1 className='font-medium text-lg md:text-2xl'>Votes: {result.votes}</h1>
                 </div>
-                <Image priority className='w-36 h-36 sm:w-2/4 self-center rounded' src={result.pic} alt={`portrait of ${result.name}`} width={200} height={100}/>
+                <div className=''>
+                  <Image priority className='self-center rounded w-44 h-52' src={result.pic} alt={`portrait of ${result.name}`} width={200} height={100}/>
+                </div>
               </div>
               <div className="flex flex-col items-end gap-x-8 self-center">
                   <h1 className='font-medium text-lg md:text-2xl'>{result?.origin && result.origin}</h1>

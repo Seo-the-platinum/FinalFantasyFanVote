@@ -4,7 +4,9 @@ import type { GetServerSideProps } from 'next'
 import { createProxySSGHelpers } from '@trpc/react-query/ssg'
 import { appRouter } from '../../server/api/root'
 import { createInnerTRPCContext } from '../../server/api/trpc'
-
+import { useRouter } from 'next/router'
+import CharacterResultsList from '../../components/results/CharacterResultsList'
+import GameResultsList from '../../components/results/GameResultsList'
 type Character = {
   id: string;
   name: string;
@@ -25,9 +27,14 @@ interface Results {
 }
 
 const Result = ({ results }: Results) => {
+  const { query } = useRouter()
+ 
   return (
     <div className='mt-14 md:mt-20'>
-        <ResultList results={results}/>
+      {
+        query.result === 'characters' ? <CharacterResultsList results={results as Character[]}/> :
+        <GameResultsList results={results as Game[]}/>
+      }
     </div>
   )
 }
